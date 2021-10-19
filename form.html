@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Date Form
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #05772b62;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #05c46b;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Please fill this form</h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age (for legal purposes)
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="age"
+				placeholder="Enter your age" />
+		</div>
+
+		<div class="form-control">
+			<label for="Place" id="label-place" placeholder="Select">
+				Please select a city
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="place" 
+            id="place" 
+            placeholder="Select a place">
+				<option value="Noida">Noida</option>
+                <option value="Delhi">Delhi</option>
+				<option value="Goa">
+					Goa
+				</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+
+        <div class="form-control">
+            <span class="select"> Select</span>
+            <i class="fa fa-carent-down icon"></i>
+
+			<label for="cafe" id="label-cafe">
+				Please select a place 
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="place" id="place">
+				<option value="Sutra">Sutra</option>
+                <option value="black club">Black Club</option>
+				<option value="The Smoke Factory">
+					The Smoke Factory
+				</option>
+                <option value="Social">Social</option>
+                <option value="China Wall">China wall</option>
+                <option value="The bar company">The bar company</option>
+                <option value="Lord of the drinks">Lord of the drinks</option>
+                <option value="Revolving">Revolving</option>
+                <option value="Farzi Cafe">Farzi Cafe</option>
+                <option value="Junkyard Cafe">Junkyard Cafe</option>
+                <option value="The Big Chill">The Big Chill</option>
+                <option value="Roseate House">Roseate House</option>
+                <option value="By the Bay">By the bay</option>
+                <option value="Rustique Cafe">Rustique Cafe</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Which mode of transport do you prefer
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="car-1">
+				<input type="radio"
+					id="car-1"
+					name="recommed">My car</input>
+			</label>
+			<label for="car-2">
+				<input type="radio"
+					id="car-2"
+					name="recommed">Your Car</input>
+			</label>
+			<label for="car-3">
+				<input type="radio"
+					id="car-3"
+					name="recommed">BMW/Mercedes</input>
+			</label>
+		</div>
+
+        <div class="form-control">
+			<label>
+				What time do you prefer? 
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="lunch">
+				<input type="radio"
+					id="lunch"
+					name="recommed">Lunch</input>
+			</label>
+			<label for="Dinner">
+				<input type="radio"
+					id="Dinner"
+					name="recommed">Dinner</input>
+			</label>
+			<label for="Dont want to go out">
+				<input type="radio"
+					id="Dont want to go out"
+					name="recommed">Don't want to go out only</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label>Please select Date and time
+				<small>(Your driver will be there to pick you up)</small>
+			</label>
+            <input type="datetime-local" id="Test_DatetimeLocal">
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
